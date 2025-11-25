@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title Homepage | HubSpot Practicum
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Cars Custom Object Records
+
+    a(href="/update-cobj") Add to this table
+
+    table(border="1")
+      thead
+        tr
+          th Name
+          th Model
+          th Country
+      tbody
+        each car in cars
+          tr
+            td= car.name
+            td= car.model
+            td= car.country

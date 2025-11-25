@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Update Custom Object Form | Integrating With HubSpot I Practicum
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Update Custom Object Form | Integrating With HubSpot I Practicum
+    a(href="/") Return to the homepage
+
+    form(method="POST", action="/update-cobj")
+      label(for="name") Name
+      input(type="text", name="car_name", id="car_name" required)
+
+      label(for="model") Model
+      input(type="text", name="car_model", id="car_model")
+
+      label(for="country") Country
+      input(type="text", name="country", id="country")
+
+      button(type="submit") Create Car
